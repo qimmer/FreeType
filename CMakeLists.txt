@@ -58,7 +58,7 @@ set(VERSION_PATCH "3")
 set(PROJECT_VERSION ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH})
 
 # Compiler definitions for building the library
-add_definitions(-DFT2_BUILD_LIBRARY)
+add_definitions(-DFT2_BUILD_LIBRARY -fPIC)
 
 # Specify library include directories
 include_directories("${PROJECT_SOURCE_DIR}/include")
